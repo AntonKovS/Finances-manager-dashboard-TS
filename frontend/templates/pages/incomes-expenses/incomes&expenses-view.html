@@ -1,0 +1,88 @@
+<h1 class="pages-title">Доходы и расходы</h1>
+
+<div class="creates-button row row-cols-1 row-cols-md-3 rounded-3 text-center">
+    <div class="card-body">
+        <a href="javascript:void(0)" class="card-button btn btn-lg btn-success" id="create-income">Создать доход</a>
+        <a href="javascript:void(0)" class="card-button btn btn-lg btn-danger" id="create-expense">Создать расход</a>
+    </div>
+</div>
+
+<div class="filter-date">
+    <button type="button" class="filter-date-today btn btn-outline-secondary active">Сегодня</button>
+    <button type="button" class="filter-date-week btn btn-outline-secondary">Неделя</button>
+    <button type="button" class="filter-date-month btn btn-outline-secondary">Месяц</button>
+    <button type="button" class="filter-date-year btn btn-outline-secondary">Год</button>
+    <button type="button" class="filter-date-all btn btn-outline-secondary">Все</button>
+    <span class="filter-date-second-row">
+        <button type="button" class="filter-date-interval btn btn-outline-secondary">Интервал</button>
+        <span class="filter-date-second-inputs">
+            <span class="align-self-center me-1 d-inline">c </span>
+            <span class="filter-date-from d-inline align-self-center">
+                  <span class="form-group d-inline">
+                      <input type="date" class="form-control d-inline text-secondary" id="input-date-from">
+                  </span>
+            </span>
+            <span class="align-self-center mx-1 d-inline"> по </span>
+            <span class="filter-date-to d-inline align-self-center">
+                   <span class="form-group d-inline">
+                       <input type="date" class="form-control d-inline text-secondary" id="input-date-to">
+                   </span>
+            </span>
+        </span>
+    </span>
+</div>
+
+
+    <div class="table-action-list table-responsive small text-center">
+    <table class="table table-sm">
+        <thead class="col col-4">
+        <tr>
+            <th scope="col" style="width: 110px">№ операции</th>
+            <th scope="col" style="width: 70px">Тип</th>
+            <th scope="col" style="width: 130px">Категория</th>
+            <th scope="col" style="width: 90px">Сумма</th>
+            <th scope="col" style="width: 90px">Дата</th>
+            <th scope="col" style="width: 520px">Комментарий</th>
+            <th scope="col" style="width: 90px"></th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+<!--        <tr>-->
+<!--            <td>1</td>-->
+<!--            <td style="color: #00c054">доход</td>-->
+<!--            <td>зарплата</td>-->
+<!--            <td>500$</td>-->
+<!--            <td>11.09.2022</td>-->
+<!--            <td></td>-->
+<!--            <td>-->
+<!--                <a href="javascript:void(0)" class="table-icon-delete me-2"><i class="fa-solid fa-trash-can"></i></a>-->
+<!--                <a href="javascript:void(0)" class="table-icon-edit"><i class="fa-solid fa-pencil"></i></a>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>2</td>-->
+<!--            <td style="color: red">расход</td>-->
+<!--            <td>жильё</td>-->
+<!--            <td>2 500$</td>-->
+<!--            <td>12.09.2022</td>-->
+<!--            <td></td>-->
+<!--            <td>-->
+<!--                <a href="javascript:void(0)" class="table-icon-delete me-2"><i class="fa-solid fa-trash-can"></i></a>-->
+<!--                <a href="javascript:void(0)" class="table-icon-edit"><i class="fa-solid fa-pencil"></i></a>-->
+<!--            </td>-->
+<!--        </tr>-->
+        </tbody>
+    </table>
+</div>
+
+<div id="operation-popup">
+    <div class="col m-auto" id="operation-popup-window">
+        <div class="card rounded-3 shadow-sm px-4 py-4 m-auto">
+            <div class="text-center py-2">
+                <h2 class="card-popup-title pricing-card-title mx-auto mb-4">Вы действительно хотите удалить операцию?</h2>
+                <a href="javascript:void(0)" class="card-button btn btn-lg btn-success me-2" id="operation-popup-yes">Да, удалить</a>
+                <a href="javascript:void(0)" class="card-button btn btn-lg btn-danger" id="operation-popup-no">Не удалять</a>
+            </div>
+        </div>
+    </div>
+</div>

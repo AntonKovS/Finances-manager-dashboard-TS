@@ -1,0 +1,46 @@
+<div class="w-100">
+
+    <h1 class="main-title m-0">Главная</h1>
+
+    <div class="filter-date">
+        <button type="button" class="filter-date-today btn btn-outline-secondary active">Сегодня</button>
+        <button type="button" class="filter-date-week btn btn-outline-secondary">Неделя</button>
+        <button type="button" class="filter-date-month btn btn-outline-secondary">Месяц</button>
+        <button type="button" class="filter-date-year btn btn-outline-secondary">Год</button>
+        <button type="button" class="filter-date-all btn btn-outline-secondary">Все</button>
+        <span class="filter-date-second-row">
+            <button type="button" class="filter-date-interval btn btn-outline-secondary">Интервал</button>
+            <span class="filter-date-second-inputs">
+                <span class="align-self-center me-1 d-inline">c </span>
+                <span class="filter-date-from d-inline align-self-center">
+                    <span class="form-group d-inline">
+                        <input type="date" class="form-control d-inline text-secondary" id="input-date-from">
+                    </span>
+                </span>
+                <span class="align-self-center mx-1 d-inline"> по </span>
+                <span class="filter-date-to d-inline align-self-center">
+                    <span class="form-group d-inline">
+                        <input type="date" class="form-control d-inline text-secondary" id="input-date-to">
+                    </span>
+                </span>
+            </span>
+        </span>
+    </div>
+
+    <div class="main-graphs justify-content-center align-items-center">
+        <div class="main-graphs-item">
+            <p class="main-graphs-item-title">Доходы</p>
+            <div class="graph">
+                <canvas id="myChart-1"></canvas>
+            </div>
+        </div>
+        <div class="main-graphs-line"></div>
+        <div class="main-graphs-item">
+            <p class="main-graphs-item-title">Расходы</p>
+            <div class="graph">
+                <canvas id="myChart-2"></canvas>
+            </div>
+        </div>
+    </div>
+
+</div>

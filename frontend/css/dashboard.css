@@ -1,0 +1,229 @@
+@import "layout.css";
+
+.main-title {
+    font-family: Roboto-medium, sans-serif;
+    font-size: 40px;
+    padding: 100px 60px 60px 60px;
+}
+
+.filter-date-from input, .filter-date-to input {
+    width: 120px;
+}
+
+.filter-date-from input:focus, .filter-date-to input:focus {
+    border-color: black;
+    box-shadow: none;
+}
+
+.filter-date {
+    padding: 0 0 140px 60px;
+}
+
+.filter-date button {
+    width: 100px;
+    font-family: Roboto-medium, sans-serif;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+#input-date-from, #input-date-to {
+    font-size: 12px;
+}
+
+.main-graphs {
+    gap: 0;
+    max-width: 1200px;
+    /*height: 100vh;*/
+    display: grid;
+    padding: 0 60px 0 60px;
+    grid-template-columns: 447px 1fr 447px;
+}
+
+.main-graphs-item-title {
+    font-family: Roboto-medium, sans-serif;
+    font-size: 28px;
+    color: #290661;
+    text-align: center;
+}
+
+.main-graphs-item {
+    width: 100%;
+    /*height: 500px;*/
+    justify-self: center;
+}
+
+.graph {
+    width: 100%;
+}
+
+.main-graphs-line {
+    width: 2px;
+    height: 480px;
+    background-color: #D9D9D9;
+    margin: 50px 84px 0 84px;
+    padding: 0;
+    display: inline-block;
+    justify-self: end;
+}
+
+/* 1230 - 1439 */
+@media screen and (max-width: 1439px) {
+    #content-layout {
+        max-width: 840px;
+        padding: 0 80px 0 80px;
+    }
+    .main-title {
+        padding-top: 28px;
+        font-size: 36px;
+        text-align: center;
+    }
+    .main-graphs {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 80px;
+        padding-bottom: 80px;
+    }
+    .main-graphs-item {
+        width: 447px;
+    }
+    .main-graphs-line {
+        display: none;
+    }
+    .filter-date {
+        padding: 0 30px 80px 30px;
+    }
+    .filter-date-second-row {
+        display: block;
+        padding: 30px 0 0 0;
+    }
+}
+
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+    #content-layout {
+        max-width: 740px;
+        padding: 0 30px 0 30px;
+    }
+    .filter-date {
+        padding-bottom: 40px;
+    }
+    .main-graphs {
+        gap: 40px;
+    }
+}
+
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+    #content {
+        justify-content: center;
+    }
+    #content-layout {
+        text-align: center;
+        padding: 0 20px 0 60px;
+    }
+}
+
+/* 470 - 767 */
+@media screen and (max-width: 767px) {
+    #content-layout {
+        max-width: 470px;
+        padding: 0 10px 0 10px;
+    }
+    .main-title {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .filter-date {
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .filter-date-second-row {
+        padding: 0;
+        /*width: 100%;*/
+        border: 1px solid #d0d0d0;
+        border-radius: 5px;
+        width: 336px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .filter-date-second-inputs {
+        width: 100%;
+        margin-left: 5px;
+    }
+    .filter-date .btn {
+        padding: 3px 6px 3px 6px;
+        width: 90px;
+        margin: 5px;
+        font-size: 12px;
+    }
+    .filter-date-from input, .filter-date-to input {
+        width: 85px;
+        padding: 3px;
+    }
+    .main-graphs {
+        padding: 50px 5px 5px 0;
+        gap: 50px;
+    }
+    .main-graphs-item-title {
+        font-size: 20px;
+    }
+}
+
+/* 380 - 469 */
+@media screen and (max-width: 469px) {
+    .filter-date-second-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 220px;
+        margin-top: 10px;
+        padding: 5px 5px 5px 0;
+    }
+    .filter-date .btn {
+        width: 70px;
+    }
+    .filter-date .filter-date-second-row button {
+        height: 26px;
+        align-self: center;
+        width: 70px;
+    }
+    .filter-date-second-inputs {
+        width: 110px;
+        text-align: end;
+        font-size: 12px;
+    }
+    .filter-date-second-inputs .form-group input {
+        margin: 3px 0;
+    }
+    .main-graphs {
+        padding-top: 30px;
+        gap: 0;
+    }
+    .main-graphs-item {
+        width: 300px;
+        height: 360px;
+    }
+}
+
+/* 320 - 379 */
+@media screen and (max-width: 379px) {
+    .filter-date {
+        width: 260px;
+        padding: 0;
+        align-content: center;
+    }
+    .filter-date .btn {
+        width: 70px;
+    }
+    .filter-date .filter-date-second-row button {
+        height: 26px;
+        align-self: center;
+        width: 70px;
+    }
+
+    .main-graphs-item {
+        width: 250px;
+        height: 320px;
+    }
+}

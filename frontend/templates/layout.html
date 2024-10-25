@@ -1,0 +1,94 @@
+<div class="sidebar-main">
+    <nav>
+        <div class="nav-right hidden-xs">
+            <div class="sidebar-button" id="btn">
+                <div class="bar top"></div>
+                <div class="bar middle"></div>
+                <div class="bar bottom"></div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="sidebar d-flex sticky-top">
+    <div class="sidebar-css d-flex flex-column px-2 py-3">
+        <a href="#/"
+           class="d-flex align-items-center mx-auto pe-4 mb-1 mt-4 link-body-emphasis text-decoration-none">
+            <img class="align-items-center" src="static/images/logo.png" alt="logo" width="98" height="40">
+        </a>
+        <hr>
+        <ul class="width-element nav nav-pills flex-column mb-auto">
+            <li class="nav-item width-element">
+                <a href="#/" class="nav-link nav-link-font14 d-flex link-body-emphasis" id="click-utils">
+                    <i class="nav-link-icon-css bi pe-none fa-solid fa-house mb-1"></i>
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li class="nav-item width-element">
+                <a href="#/incomes&expenses-view" class="nav-link nav-link-font14 d-flex link-body-emphasis">
+                    <i class="nav-link-icon-css bi pe-none fa-regular fa-money-bill-1"></i>
+                    <span>Доходы & Расходы</span>
+                </a>
+            </li>
+            <li class="nav-item width-element" id="leftside-navigation">
+                <ul class="nav cat-list-width d-block">
+                    <li class="sub-menu">
+                        <a href="javascript:void(0)" id="lable-for-change"
+                           class="d-flex justify-content-between nav-link nav-link-font14 d-flex link-body-emphasis text-decoration-none">
+                            <span>Категории</span>
+                            <i class="nav-link-item-icon pe-none fa-solid fa-chevron-right align-self-center"></i></a>
+                        <ul class="sub-menu-hidden-for-arrow p-0 collapse d-none">
+                            <li class="nav">
+                                <a href="#/incomes-view"
+                                   class="sub-menu-hidden-element nav-link nav-link-font14 align-content-center w-100 link-body-emphasis">
+                                    <span>Доходы</span></a>
+                            </li>
+                            <li class="nav">
+                                <a href="#/expenses-view"
+                                   class="sub-menu-hidden-element nav-link nav-link-font14 align-content-center w-100 link-body-emphasis">
+                                    <span>Расходы</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+<!--        <ul class="p-0 m-0">-->
+<!--            <li class="balance">-->
+<!--                <div href="javascript:void(0)" class="nav-link nav-link-font14 link-body-emphasis ps-2 align-content-end">-->
+<!--                    <span>Баланс: </span><a href="javascript:void(0)" class="ms-2"></a>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--        </ul>-->
+        <div class="balance dropdown nav-link nav-link-font14 ps-2">
+            <a href="javascript:void(0)"
+               class="d-flex align-items-center link-body-emphasis text-decoration-none mb-4"
+               data-bs-toggle="dropdown" aria-expanded="false"> Баланс: &nbsp
+                <span class="nav-link nav-link-font14 align-content-center" id="balance"></span>
+            </a>
+            <ul class="dropdown-menu nav-link-font14 shadow p-0 m-0" data-popper-placement="top-start">
+                <li class="balance-popup-group">
+                    <input type="number" id="balance-amount" class="dropdown-item p-0">
+                    <label class="button btn form-check-label w-100" for="balance-amount" id="balance-update-button">Изменить</label>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="dropdown nav-link-font14 ps-2">
+            <a href="javascript:void(0)"
+               class="d-flex align-items-center link-body-emphasis text-decoration-none mb-4"
+               data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="static/images/avatar-icon.png" alt="user" width="36" height="36"
+                     class="rounded-circle me-3 align-content-center">
+                <span class="nav-link nav-link-font14 align-content-center" id="profile-name">Пользователь</span>
+            </a>
+            <ul class="popup-user-logout dropdown-menu text-small shadow p-0 m-0" data-popper-placement="top-start">
+                <li><a class="dropdown-item p-0" href="#/logout"><span>Logout</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="w-100" id="content-layout">
+
+</div>

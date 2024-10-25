@@ -1,0 +1,42 @@
+<div class="auth-main-page">
+    <div class="form-signin d-flex justify-content-center align-items-center p-0 vh-100 text-center">
+        <form>
+            <img class="mb-5" src="static/images/logo.png" alt="logo" width="171" height="70">
+            <h1 class="form-title h3 mb-3">Вход</h1>
+
+            <div class="mb-2">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" class="form-control" id="email" placeholder="Электронная почта">
+                        <!--добавить класс is-invalid к input, если не прошли валидацию в js-->
+                    <div class="form-error text-start offset-sm-2 invalid-feedback">
+                        Введите корректную электронную почту
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control" id="password" placeholder="Пароль">
+                        <!--добавить класс is-invalid к input, если не прошли валидацию в js-->
+                    <div class="form-error text-start offset-sm-2 invalid-feedback">
+                        Введите пароль
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-check text-start mt-2 mb-4">
+                <input class="form-check-input border-black" type="checkbox" value="remember-me" id="remember-me">
+                <label class="form-check-label text-black" for="remember-me">
+                    Запомнить меня
+                </label>
+            </div>
+            <button class="btn btn-primary mb-2 w-100" type="button" id="process" disabled>Войти</button>
+
+            <p class="text-start" id="goToSignUp">Ещё нет аккаунта? <a href="#/signup">Пройдите
+                регистрацию</a></p>
+
+        </form>
+    </div>
+</div>

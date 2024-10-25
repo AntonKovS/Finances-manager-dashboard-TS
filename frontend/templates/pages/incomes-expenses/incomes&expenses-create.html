@@ -1,0 +1,20 @@
+<h1 class="pages-title">Создание дохода/расхода</h1>
+
+<div class="cards-css row row-cols-1 row-cols-md-3 rounded-3">
+    <div class="card-body">
+<!--        <input type="select" class="form-control" placeholder="Тип...">-->
+        <select class="form-select form-select-sm" id="create-select-type">
+            <option value="income">Доход</option>
+            <option value="expense">Расход</option>
+        </select>
+<!--        <input type="text" class="form-control" placeholder="Категория..." id="create-select-category">-->
+        <select class="form-select form-select-sm" id="create-select-category">
+            <option value="0" id="0">Категория...</option>
+        </select>
+        <input type="text" class="form-control" id="create-amount" placeholder="Сумма в $...">
+        <input type="date" class="form-control" placeholder="Дата..." id="create-date">
+        <input type="text" class="form-control" placeholder="Комментарий..." id="create-comment">
+        <a href="javascript:void(0)" class="card-button btn btn-success" id="create-request-button">Создать</a>
+        <a href="#/incomes&expenses-view" type="button" class="card-button btn btn-danger">Отмена</a>
+    </div>
+</div>

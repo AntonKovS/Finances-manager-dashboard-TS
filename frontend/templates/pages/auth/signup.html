@@ -1,0 +1,58 @@
+<div class="auth-main-page">
+    <div class="form-signin d-flex justify-content-center align-items-center p-0 vh-100 text-center">
+        <form>
+            <img class="mb-5" src="static/images/logo.png" alt="logo" width="171" height="70">
+            <h1 class="form-title h3 mb-3">Создайте аккаунт</h1>
+
+            <div class="mb-2">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" id="fullName" placeholder="ФИО">
+                        <!--добавить класс is-invalid к input, если не прошли валидацию в js-->
+                    <div class="form-error text-start offset-sm-2 invalid-feedback">
+                        Введите ФИО
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" class="form-control" id="email" placeholder="Электронная почта">
+                        <!--добавить класс is-invalid к input, если не прошли валидацию в js-->
+                    <div class="form-error text-start offset-sm-2 invalid-feedback">
+                        Введите электронную почту
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control" id="password" placeholder="Пароль">
+                        <!--добавить класс is-invalid к input, если не прошли валидацию в js-->
+                    <div class="form-error text-start offset-sm-2 invalid-feedback">
+                        Введите пароль
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" class="form-control" id="repeatPassword" placeholder="Подтверждение пароля"
+                           required="">
+                    <div class="form-error text-start offset-sm-2 invalid-feedback">
+                        Введите одинаковый пароль
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary mb-2 w-100" type="button" id="process" disabled>Создать</button>
+
+            <p class="text-start" id="goToLogin">Уже есть аккаунт? <a href="#/login">Войдите в систему</a>
+            </p>
+
+        </form>
+    </div>
+</div>

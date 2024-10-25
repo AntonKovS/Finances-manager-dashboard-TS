@@ -1,0 +1,283 @@
+@import "layout.css";
+
+.pages-title {
+    font-family: Roboto-medium, sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 100px 60px 40px 60px;
+}
+
+.creates-button {
+    padding: 0 20px 60px 60px;
+    margin: 0;
+}
+
+.creates-button .card-body {
+    display: flex;
+    font-size: 14px;
+    padding: 0;
+}
+
+.creates-button .btn {
+    margin: 0 10px 0 0;
+}
+
+.cards-css {
+    gap: 20px;
+    padding: 0 30px 20px 60px;
+    margin: 0;
+}
+
+.card-css {
+    padding: 0;
+    width: 352px;
+}
+
+.card-css > .card-body {
+    height: 121px;
+    padding: 18px;
+}
+
+.card-body > .card-title {
+    font-family: Roboto-medium, sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card-body input, .card-body select {
+    max-width: 397px;
+    margin-bottom: 10px;
+}
+
+.card-body select {
+    cursor: pointer;
+}
+
+#create-select-category, #operation-edit-category {
+    color: grey;
+}
+#create-select-category option, #operation-edit-category option {
+    color: black;
+}
+#create-select-category option:first-child, #operation-edit-category option:first-child {
+    color: grey;
+}
+
+.card-body button:nth-child(2) {
+    margin-right: 10px;
+}
+
+.card-button {
+    font-family: Roboto-medium, sans-serif;
+    font-size: 14px;
+    padding: 11px 16px 11px 16px;
+}
+
+.card-popup-title {
+    font-family: Roboto-medium, sans-serif;
+    font-size: 20px;
+    max-width: 450px;
+    justify-self: center;
+}
+
+.filter-date-from input, .filter-date-to input {
+    width: 120px;
+}
+
+.filter-date-from input:focus, .filter-date-to input:focus {
+    border-color: black;
+    box-shadow: none;
+}
+
+.filter-date {
+    padding: 0 20px 40px 60px;
+}
+
+.filter-date button {
+    width: 100px;
+    font-family: Roboto-medium, sans-serif;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+#input-date-from, #input-date-to {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.table-action-list {
+    max-width: 1101px;
+    padding: 0 20px 50px 60px;
+}
+
+#incomes-popup, #expenses-popup, #operation-popup {
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    z-index: 1200;
+    top: 0;
+    left: 0;
+}
+
+#incomes-popup-window, #expenses-popup-window, #operation-popup-window {
+    max-width:530px;
+    font-size: 25px;
+    align-content:center;
+    z-index: 1200;
+}
+
+.cards-css .card-body .btn {
+    margin-right: 10px;
+}
+
+.table-icon-delete, .table-icon-edit {
+    color: black;
+}
+
+.table-icon-delete.parent, .table-icon-edit.parent {
+    text-wrap: none;
+}
+
+
+
+/* 1230 - 1439 */
+@media screen and (max-width: 1439px) {
+    .filter-date {
+        padding: 0 10px 40px 60px;
+    }
+    .filter-date-second-row {
+        display: block;
+        padding: 30px 0 0 0;
+    }
+}
+
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+    .table-action-list {
+        font-size: 12px;
+    }
+}
+
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+    #content {
+        justify-content: center;
+    }
+    #content-layout {
+        padding: 0 10px 0 40px;
+    }
+    .table-action-list {
+        padding: 0 0 50px 0;
+    }
+}
+
+/* 470 - 767 */
+@media screen and (max-width: 767px) {
+    #content-layout {
+        padding: 0 10px 0 10px;
+    }
+    .pages-title {
+        font-size: 30px;
+        padding: 80px 20px 20px 50px;
+    }
+    .creates-button {
+        padding: 0 20px 50px 50px;
+    }
+    .creates-button .card-button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .filter-date {
+        padding: 0;
+    }
+    .filter-date-second-row {
+        padding: 10px;
+        border: 1px solid #d0d0d0;
+        border-radius: 5px;
+        width: 260px;
+        margin: 10px 0 20px 0;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .filter-date .btn {
+        font-size: 12px;
+        margin: 5px;
+    }
+    .filter-date .filter-date-second-row button {
+        height: 32px;
+        align-self: center;
+        width: 100px;
+    }
+    .filter-date-second-inputs {
+        text-align: end;
+    }
+}
+
+/* 380 - 469 */
+@media screen and (max-width: 469px) {
+    .pages-title {
+        padding: 80px 20px 40px 20px;
+    }
+    .creates-button {
+        padding: 0 20px 50px 20px;
+    }
+    .cards-css {
+        padding: 0 20px;
+        justify-content: center;
+    }
+    .card-body > .card-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .card-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .table-action-list {
+        font-size: 9px;
+    }
+}
+
+/* 320 - 379 */
+@media screen and (max-width: 379px) {
+    .pages-title {
+        font-size: 24px;
+        text-align: center;
+        padding: 80px 0 20px 0;
+    }
+    .creates-button {
+        padding: 0 0 20px 0;
+    }
+    .creates-button .card-body {
+        justify-content: center;
+    }
+
+    .card-button.btn {
+        font-size: 12px;
+        padding: 8px;
+        margin-right: 7px;
+    }
+
+    .creates-button .btn {
+        padding: 5px;
+        font-size: 10px;
+        width: 100px;
+        height: 32px;
+        margin: 6px;
+        align-content: center;
+    }
+    .filter-date {
+        text-align: center;
+    }
+    .filter-date-second-row {
+        margin: 10px auto;
+    }
+    .table-action-list {
+        font-size: 7px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+    }
+}

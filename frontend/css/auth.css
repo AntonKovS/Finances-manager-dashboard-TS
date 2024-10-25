@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../static/fonts/Roboto.ttf");
+}
+
+@font-face {
+  font-family: Roboto-medium;
+  src: url("../static/fonts/Robotomedium.ttf");
+  font-weight: bold;
+}
+
+.auth-main-page form {
+  font-family: Roboto, sans-serif;
+  width: 397px;
+}
+
+.form-title {
+  font-size: 40px;
+  font-family: Roboto-medium, sans-serif;
+  color: #052C65;
+}
+
+form .input-group input {
+  font-size: 15px;
+}
+
+.form-error, #formCheckLabel, #goToSignUp, #goToLogin {
+  font-size: 12px;
+}
+
+#button {
+  font-size: 15px;
+  font-family: Roboto-medium, sans-serif;
+}
+
+.input-group-text > i {
+  width: 14px;
+}
+
+/* 320 - 469 */
+@media screen and (max-width: 469px) {
+  .auth-main-page form {
+    width: 300px;
+    padding: 15px;
+  }
+}
